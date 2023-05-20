@@ -41,3 +41,7 @@ body {
 .nondisplay-fact {
     display: none;
 }
+
+.nondisplay-question {
+    display: none
+}

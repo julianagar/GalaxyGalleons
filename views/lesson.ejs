@@ -10,34 +10,51 @@
             <p><%= fact %></p>
         </div>
         <% }); %>    
-</div>
+    </div>
+    
+    <div id="quizzes" class="nondisplay-question">
 
-    
-    <button class="btn btn-primary" onclick="showFacts()">Next</button>
-    
-    <script>
-        var facts = document.getElementsByClassName("nondisplay-fact");
-        const factsArray = facts
-        const factLength = facts.length
-        let iterator = 0
-        function showFacts() {
-            if (iterator < factLength) {
-                facts[iterator].style.display = "block";
-                iterator += 1;
-            } else {
-                hideFacts()
-            }
+<% lesson1.quiz.forEach(question => { %>
+    <strong><%= question.question %></strong>
+    <p><%= question.quizAnswers %></p>
+<% }) %>
+    </div>
             
-        }
-
-        function hideFacts() {
-            const factsDiv = document.getElementById('lessons')
-            for (const child of factsDiv.children) {
-                child.style.display = "none"
-            }
-        }
-        
-    </script>
-    
-    <%- include('../partials/footer.ejs') %>
-    
+            
+            <button class="btn btn-primary" onclick="showFacts()">Next</button>
+            
+            <script>
+                var facts = document.getElementsByClassName("nondisplay-fact");
+                const factsArray = facts
+                const factLength = facts.length
+                let iterator = 0
+                function showFacts() {
+                    if (iterator < factLength) {
+                        facts[iterator].style.display = "block";
+                        iterator += 1;
+                    } else if (iterator => factLength) {
+                        hideFacts()
+                    }
+                    
+                }
+                
+                function hideFacts() {
+                    const factsDiv = document.getElementById('lessons')
+                    for (const child of factsDiv.children) {
+                        child.style.display = "none"
+                    }
+                    displayQuiz()
+                }
+                
+                function displayQuiz() {
+                    
+                    const quizDiv = document.getElementById('quizzes')
+                    quizDiv.classList.remove('nondisplay-question')
+                }
+                
+                
+                
+            </script>
+            
+            <%- include('../partials/footer.ejs') %>
+            
