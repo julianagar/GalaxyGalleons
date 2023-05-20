@@ -6,5 +6,20 @@
     font-weight: bold;
     text-align: center;
     border-radius: 10px;
+    text-align: center;
     margin-bottom: 10px;
+}
+
+body { 
+    
+}
+
+.login {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.sr-only {
+    margin: 10px;
 }
