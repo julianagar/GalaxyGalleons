@@ -23,10 +23,18 @@ app.post("/", function(req, res) {
     const password = req.body.password;
     console.log(username, password)
     
-    if (username === "Elon Musk" && password === "Tesla") {
-        res.render("homepage", {username: username})
+    if (username === "." && password === ".") {
+        res.redirect("/app")
     } 
     
+})
+
+app.get("/app", function(req, res) {
+    res.render("app")
+})
+
+app.get("/lesson1", function(req, res) {
+    res.render("lesson")
 })
 
 app.listen(3000, function() {
