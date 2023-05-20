@@ -23,3 +23,13 @@ body {
 .sr-only {
     margin: 10px;
 }
+
+
+.lesson {
+    display: inline-block;
+    margin: 10px;
+}
+
+.lesson-preview {
+    height: 60%;
+}
