@@ -1,5 +1,25 @@
 <%- include('../partials/header.ejs') %>
-<h1>Lesson 1</h1>
-<p>Take this exam before you continue to the rest of the course in order to see what you already know about space!</p>
+<h1>Lesson <%= lesson1.lessonNo %>: <%= lesson1.lessonTitle %></h1>
+<h4>Take this exam before you continue to the rest of the course in order to see what you already know about space!</h4>
+
+<hr>
+
+<% lesson1.facts.forEach(function(fact) { %>
+    <div class="nondisplay-fact">
+        <p><%= fact %></p>
+    </div>
+<% }); %>
+
+<button class="btn btn-primary" onclick="showFacts()">Next</button>
+
+<script>
+    var facts = document.getElementsByClassName("nondisplay-fact");
+    const iterator = 0
+    function showFacts() {
+        facts[iterator].classList.remove("nondisplay-fact");
+        console.log(facts[iterator])
+        iterator += 1;
+    }
+</script>
 
 <%- include('../partials/footer.ejs') %>

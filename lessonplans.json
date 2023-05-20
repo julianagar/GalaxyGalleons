@@ -1,8 +1,8 @@
 {
     "lessons": [
         {
-            "lesson-no.": "1",
-            "lesson-title": "Introduction to Mars",
+            "lessonNo": "1",
+            "lessonTitle": "Introduction to Mars",
             "facts": [
                 "Thin Atmosphere: Mars has a thin atmosphere compared to Earth, with about 1% of Earth's atmospheric pressure. It is primarily composed of carbon dioxide (CO2) with traces of nitrogen and argon. This thin atmosphere provides little protection from radiation and has a negligible oxygen content, making it uninhabitable for humans without life support systems.", "Importance of Pressure and Oxygen: The low atmospheric pressure on Mars poses challenges for human survival. To live on Mars, humans would require pressurized habitats or spacesuits to maintain suitable pressure levels for breathing and bodily functions. Additionally, a sustainable and efficient system for generating breathable oxygen is crucial.", "Dust Storms: Mars is known for its frequent and sometimes intense dust storms. These storms can cover the entire planet and last for weeks or even months. Dust particles in the atmosphere can pose risks to human health and equipment. Adequate shielding and filtration systems are necessary to protect against the abrasive and fine Martian dust.", "Temperature Extremes: Mars experiences extreme temperature variations due to its thin atmosphere and greater distance from the Sun compared to Earth. Surface temperatures on Mars can range from as low as -195 degrees Fahrenheit (-125 degrees Celsius) at the poles to highs of around 70 degrees Fahrenheit (20 degrees Celsius) at the equator during summer. Surviving such temperature extremes would require insulated habitats and protective gear.", "Lack of Breathable Air: As mentioned earlier, Mars' atmosphere is predominantly composed of carbon dioxide and lacks sufficient oxygen for humans to breathe. To survive, a sustainable life support system is essential, which can extract oxygen from the Martian atmosphere or rely on Earth-imported supplies until long-term solutions, such as terraforming or large-scale oxygen production, are achieved."
             ], 

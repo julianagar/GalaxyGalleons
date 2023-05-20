@@ -1,3 +1,4 @@
+const lessonPlans = require('./lessonplans.json')
 const express = require("express");
 const bodyParser = require("body-parser")
 const mongoose = require("mongoose")
@@ -33,8 +34,11 @@ app.get("/app", function(req, res) {
     res.render("app")
 })
 
+const lesson1 = lessonPlans.lessons[0]
+console.log(lesson1)
+
 app.get("/lesson1", function(req, res) {
-    res.render("lesson")
+    res.render("lesson", {lesson1: lesson1, index: 0})
 })
 
 app.listen(3000, function() {
