@@ -4,22 +4,40 @@
 
 <hr>
 
-<% lesson1.facts.forEach(function(fact) { %>
-    <div class="nondisplay-fact">
-        <p><%= fact %></p>
-    </div>
-<% }); %>
+<div id="lessons">
+    <% lesson1.facts.forEach(function(fact) { %>
+        <div class="nondisplay-fact">
+            <p><%= fact %></p>
+        </div>
+        <% }); %>    
+</div>
 
-<button class="btn btn-primary" onclick="showFacts()">Next</button>
+    
+    <button class="btn btn-primary" onclick="showFacts()">Next</button>
+    
+    <script>
+        var facts = document.getElementsByClassName("nondisplay-fact");
+        const factsArray = facts
+        const factLength = facts.length
+        let iterator = 0
+        function showFacts() {
+            if (iterator < factLength) {
+                facts[iterator].style.display = "block";
+                iterator += 1;
+            } else {
+                hideFacts()
+            }
+            
+        }
 
-<script>
-    var facts = document.getElementsByClassName("nondisplay-fact");
-    const iterator = 0
-    function showFacts() {
-        facts[iterator].classList.remove("nondisplay-fact");
-        console.log(facts[iterator])
-        iterator += 1;
-    }
-</script>
-
-<%- include('../partials/footer.ejs') %>
+        function hideFacts() {
+            const factsDiv = document.getElementById('lessons')
+            for (const child of factsDiv.children) {
+                child.style.display = "none"
+            }
+        }
+        
+    </script>
+    
+    <%- include('../partials/footer.ejs') %>
+    
