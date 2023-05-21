@@ -1,4 +1,7 @@
 <%- include('../partials/header.ejs') %>
+<link rel="stylesheet" href="styles.css">
+</head>
+
 <h1>Lesson <%= lesson1.lessonNo %>: <%= lesson1.lessonTitle %></h1>
 <h4>Take this exam before you continue to the rest of the course in order to see what you already know about space!</h4>
 
@@ -103,7 +106,7 @@
                     
                     const conclusionDiv = document.getElementById('quiz-conclusion')
                     conclusionDiv.classList.remove('nondisplay-finish')
-
+                    
                     const readout = document.getElementById('readout')
                     const percentage = Math.round((correctProblems / totalProblems) * 100)
                     readout.innerHTML = `You got ${correctProblems} out of ${totalProblems} correct, or ${percentage}%`
