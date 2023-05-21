@@ -52,20 +52,9 @@
         {
             "lessonNo": "2",
             "lessonTitle": "Preparing for Travel",
-            "what-to-bring": [
-                "Water- Water is required for all life and a water recycling tool must be implemented, as there is little drinkable water on Mars.",
-                "Hygiene items- Toothpaste, shampoo, floss, personal care and cleanliness is important no matter where you are!",
-                "Medical supplies - first aid kits, medication, equipment, etc. required for healthcare and if anything goes wrong.",
-                "Life support - requirement for air purification, as the atmosphere is not compatible for humans without assistance.",
-                "Research tools - You might feel inclined to record the area around you...",
-                "Power generator-  In order to keep you alive, power must be generated to keep processes such as air purification and other requirements for life."
-            ],
-            "what-not-to-bring": [
-                "Pets - can introduce invasive species or disrupt the environment.",
-                "Disposable items (plastic water bottle) - disposable items makes it harder to keep the Martian environment clean, and keeping everything reusable is a priority.",
-                "Personal items - may affect the weight of the ship and can affect the trajectory or the landing.",
-                "Combustible materials - in a lesser known environment, combustible materials become extremely dangerous.",
-                "Anything not sterilized - Mars and Earth organisms should not be cross contaminated, as we do not want to drastically affect the genetic makeup of Mars."
+            "facts": [
+                "What to bring: \n Water- Water is required for all life and a water recycling tool must be implemented, as there is little drinkable water on Mars. \n Hygiene items- Toothpaste, shampoo, floss, personal care and cleanliness is important no matter where you are! \n Medical supplies - first aid kits, medication, equipment, etc. required for healthcare and if anything goes wrong. \n Life support - requirement for air purification, as the atmosphere is not compatible for humans without assistance. \n Research tools - You might feel inclined to record the area around you.... \n Power generator-  In order to keep you alive, power must be generated to keep processes such as air purification and other requirements for life.",
+                "What not to bring: \n Pets - can introduce invasive species or disrupt the environment. \n Disposable items (plastic water bottle) - disposable items makes it harder to keep the Martian environment clean, and keeping everything reusable is a priority. \n Personal items - may affect the weight of the ship and can affect the trajectory or the landing. \n Combustible materials - in a lesser known environment, combustible materials become extremely dangerous. \n Anything not sterilized - Mars and Earth organisms should not be cross contaminated, as we do not want to drastically affect the genetic makeup of Mars."
             ]
         },
         {
@@ -100,8 +89,117 @@
                     "quizCorrectAnswer": "c) Solar power"
                 },
                 {
-                    "question": "What is an important consideration for sustainable food production on Mars?"
-                    
+                    "question": "What is an important consideration for sustainable food production on Mars?",
+                    "quizAnswers": [
+                        "a) Importing food from Earth",
+                        "b) Utilizing genetically modified crops",
+                        "c) Implementing controlled-environment agriculture techniques"
+                    ],
+                    "quizCorrectAnswer": "c) Implementing controlled-environment agriculture techniques"
+                },
+                {
+                    "question": "Why is environmental stewardship important on Mars?",
+                    "quizAnswers": [
+                        "a) To create new ecosystems on the planet",
+                        "b) To prevent Martian dust storms",
+                        "c) To preserve the scientific value and integrity of the Martian environment"
+                    ],
+                    "quizCorrectAnswer":  "c) To preserve the scientific value and integrity of the Martian environment"
+                }
+            ]
+        },
+        {
+            "lessonNo": "4",
+            "lessonTitle": "Keeping the Environment Clean & Eco-Friendly Leisure Activies",
+            "facts": [
+                "Protecting Human Health: A clean environment is vital for ensuring the health and well-being of future astronauts and settlers on Mars. Mars is an inhospitable planet with harsh conditions, including a thin atmosphere, extreme cold, and radiation exposure. Any pollutants or contaminants in the environment could pose significant health risks to humans. By keeping the environment clean, we can minimize the potential for harmful substances that could adversely affect human health.",
+                "Preventing Contamination: It is essential to prevent contamination of the Martian environment to preserve its scientific value. Mars has the potential to harbor signs of past or present life, and studying its geology, climate, and potential microbial life can provide valuable insights into the origins and evolution of our solar system. If we introduce terrestrial microbes or contaminants from human activities, it could interfere with scientific research and compromise our ability to accurately understand Mars.",
+                "Sustaining Life Support Systems: Future missions to Mars will rely on closed-loop life support systems to provide oxygen, food, and water to astronauts. Keeping the environment clean helps maintain the integrity of these systems. If pollutants or contaminants enter the life support infrastructure, it can jeopardize the availability of essential resources and compromise the sustainability of the mission.",
+                "Preserving Martian Resources: Mars is rich in resources that could be utilized for future human settlements, such as water ice, minerals, and regolith. By keeping the environment clean, we can safeguard these resources for sustainable utilization. Contamination or pollution could render these resources unusable or difficult to extract, hampering our ability to establish long-term human presence on Mars.",
+                "Setting a Sustainable Precedent: Ensuring a clean Martian environment establishes a precedent for responsible exploration and colonization. By prioritizing environmental cleanliness from the early stages, we can foster a culture of sustainability and responsible behavior on Mars. This mindset will be crucial as we expand our presence beyond Earth and strive to minimize our impact on other celestial bodies."
+            ],
+            "quiz": [
+                {
+                    "question": "Why is it important to maintain a clean environment on Mars?",
+                    "quizAnswers": [
+                        "a) To prevent contamination of Earth's atmosphere",
+                        "b) To preserve the scientific value of Mars",
+                        "c) To reduce the risk of Martian dust storms"
+                    ],
+                    "quizCorrectAnswer": "b) To preserve the scientific value of Mars"
+                },
+                {
+                    "question": "What is one potential consequence of introducing contaminants to the Martian environment?",
+                    "quizAnswers": [
+                        "a) Enhanced soil fertility for agriculture",
+                        "b) Improved atmospheric composition for human breathing",
+                        "c) Compromised scientific research and understanding of Mars"
+                    ],
+                    "quizCorrectAnswer": "c) Compromised scientific research and understanding of Mars"
+                },
+                {
+                    "question": "How does a clean Martian environment contribute to sustaining life support systems?",
+                    "quizAnswers": [
+                        "a) By providing a natural source of oxygen",
+                        "b) By minimizing the need for waste management systems",
+                        "c) By maintaining the integrity of closed-loop systems and resources"
+                    ],
+                    "quizCorrectAnswer":  "c) By maintaining the integrity of closed-loop systems and resources"
+                },
+                {
+                    "question": "What is the significance of preserving Martian resources?",
+                    "quizAnswers": [
+                        "a) To create a sustainable energy source for Mars settlements",
+                        "b) To prevent resource depletion on Earth",
+                        "c) To ensure the availability of essential resources for future human settlements on Mars"
+                    ],
+                    "quizCorrectAnswer": "c) To ensure the availability of essential resources for future human settlements on Mars"
+                }
+            ]
+        },
+        {
+            "lessonNo": "Assessment",
+            "lessonTitle": "Take the Assessment",
+            "quiz": [
+                {
+                    "question": "Which of the following is a primary source of breathable oxygen for human survival on Mars?",
+                    "quizAnswers": [
+                        "a) Martian soil",
+                        "b) Underground water reserves",
+                        "c) Atmospheric carbon dioxide",
+                        "d) Solar panels generating electricity"
+                    ],
+                    "quizCorrectAnswer": "c) Atmospheric carbon dioxide"
+                },
+                {
+                    "question": "  What is the primary challenge in obtaining a stable and sustainable food source on Mars?",
+                    "quizAnswers": [
+                        "a) Lack of sunlight for photosynthesis",
+                        "b) Limited access to water resources",
+                        "c) High radiation levels in the soil",
+                        "d) Martian dust storms affecting crop growth"
+                    ],
+                    "quizCorrectAnswer": "b) Limited access to water resources"
+                },
+                {
+                    "question": "What is the primary method of generating energy for human settlements on Mars?",
+                    "quizAnswers": [
+                        "a) Geothermal power",
+                        "b) Nuclear power",
+                        "c) Solar power",
+                        "d) Fossil fuel combustion"
+                    ],
+                    "quizCorrectAnswer": "c) Solar power"
+                },
+                {
+                    "question": "Which of the following strategies is crucial for protecting humans from harmful radiation on Mars?",
+                    "quizAnswers": [
+                        "a) Wearing specialized radiation-blocking suits at all times",
+                        "b) Underground habitation in shielded structures",
+                        "c) Genetic modification of human DNA to resist radiation",
+                        "d) Consumption of high-dose antioxidant supplements"
+                    ],
+                    "quizCorrectAnswer": "b) Underground habitation in shielded structures"
                 }
             ]
         }
