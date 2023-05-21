@@ -1,0 +1,15 @@
+body {
+    background: rgb(255,0,170);
+    background: linear-gradient(0deg, rgba(255,0,170,1) 0%, rgba(161,0,107,1) 0%, rgba(0,0,0,1) 48%);        
+    background-attachment: fixed; 
+}
+
+.login {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.sr-only {
+    margin: 10px;
+}
