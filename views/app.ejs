@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <%- include('../partials/header.ejs') %>
-<h1>Hello, Elon Musk</h1>
+<h1>Hello, <%= user.name %></h1>
 <p>Space tourism is the term used to describe space travel for recreational or leisure purposes. What was once only a dream – described in books such as Arthur C. Clarke’s 2001: A Space Odyssey – is now becoming a reality. Space tourism offers everyone the opportunity to travel to space, and to experience a space flight. Already, a number of people have made the journey to space, and more will follow in the near future.</p>
 
 <hr>
@@ -13,6 +13,7 @@
         <div class="card-body">
             <h5 class="card-title">Lesson 1: Intro to Mars</h5>
             <p class="card-text">Enter this lesson to learn more about Mars, a planet similar to Earth that many people are now living on.</p>
+            <p>Progress: <%= user.lesson[0] %> </p>
             <a href="/lesson1" class="btn btn-primary">Enter →</a>
             
         </div>
@@ -23,6 +24,7 @@
         <div class="card-body">
             <h5 class="card-title">Lesson 2: Preparation before traveling</h5>
             <p class="card-text">Enter this lesson to learn what items are or aren't necessary to bring for travel.</p>
+            <p>Progress: <%= user.lesson[1] %> </p>
             <a href="/lesson2" class="btn btn-primary">Enter →</a>
         </div>
     </div>
@@ -32,6 +34,7 @@
         <div class="card-body">
             <h5 class="card-title">Lesson 3: Self Sustainability</h5>
             <p class="card-text">Enter this lesson to learn how humans are able to survive for extended periods of time on Mars. </p>
+            <p>Progress: <%= user.lesson[2] %> </p>
             <a href="/lesson3" class="btn btn-primary">Enter →</a>
         </div>
     </div>
@@ -41,6 +44,7 @@
         <div class="card-body">
             <h5 class="card-title">Lesson 4: Environmental Concerns</h5>
             <p class="card-text">Enter this lesson to learn how you can stay entertained while keeping the Martian environment clean.</p>
+            <p>Progress: <%= user.lesson[3] %> </p>
             <a href="/lesson4" class="btn btn-primary">Enter →</a>
         </div>
     </div>
@@ -50,6 +54,7 @@
         <div class="card-body">
             <h5 class="card-title">Final Assessment</h5>
             <p class="card-text">Test your new knowledge with this final assessment.</p>
+            <p>Progress: <%= user.lesson[4] %> </p>
             <a href="/lesson5" class="btn btn-primary">Enter →</a>
         </div>
     </div>
