@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 let users = [
-    {name: "Simon Ngyuen", password: "ChatGPT", progress: [0, 0, 0,  0, 0]},
+    {name: "Simon Nguyen", password: "ChatGPT", progress: [0, 0, 0,  0, 0]},
 ]
 
 let loggedIn = false
@@ -36,8 +36,6 @@ app.post("/", function(req, res) {
             user = login
             loggedIn = true
             res.render("app", {user: user})
-        } else {
-            res.send("There was a problem logging in. Please try again.")
         }
     })
 })

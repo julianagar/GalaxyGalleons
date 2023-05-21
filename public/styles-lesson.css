@@ -41,3 +41,78 @@ p, span {
 .nondisplay-finish {
     display: none;
 }
+
+.lesson {
+    display: inline-block;
+    margin: 10px;
+}
+
+.lesson-preview {
+    height: 60%;
+}
+
+.answers {
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    /*optional*/
+    font-family: arial, sans-serif;
+    /*input has OS specific font-family*/
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#next-btn {
+    display: block;
+    margin: 30px;
+}
+
+#return-btn {
+    display: none;
+    margin: 30px;
+}
+
+.dictionary {
+    display: inline-block;
+    width: 60%;
+    margin: 10px;
+    float:left;
+}
+
+.search {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.search button {
+    margin: 20px;
+}
+
+.search a {
+    margin: 20px;
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+.planet-info {
+    display: inline-block;
+    width: 60%;
+    margin: 10px;
+    float:left;
+}
+
+.planet-img {
+    display: inline-block;
+    width: 20%;
+    margin: 10px;
+    margin: auto auto;
+}
+
+.question {
+    font-size: 20px;
+}
