@@ -3,6 +3,7 @@
         {
             "lessonNo": "1",
             "lessonTitle": "Introduction to Mars",
+            "lessonDescription": "Enter this lesson to learn more about Mars, a planet similar to Earth that many people are now living on.",
             "facts": [
                 "Thin Atmosphere: Mars has a thin atmosphere compared to Earth, with about 1% of Earth's atmospheric pressure. It is primarily composed of carbon dioxide (CO2) with traces of nitrogen and argon. This thin atmosphere provides little protection from radiation and has a negligible oxygen content, making it uninhabitable for humans without life support systems.", "Importance of Pressure and Oxygen: The low atmospheric pressure on Mars poses challenges for human survival. To live on Mars, humans would require pressurized habitats or spacesuits to maintain suitable pressure levels for breathing and bodily functions. Additionally, a sustainable and efficient system for generating breathable oxygen is crucial.", "Dust Storms: Mars is known for its frequent and sometimes intense dust storms. These storms can cover the entire planet and last for weeks or even months. Dust particles in the atmosphere can pose risks to human health and equipment. Adequate shielding and filtration systems are necessary to protect against the abrasive and fine Martian dust.", "Temperature Extremes: Mars experiences extreme temperature variations due to its thin atmosphere and greater distance from the Sun compared to Earth. Surface temperatures on Mars can range from as low as -195 degrees Fahrenheit (-125 degrees Celsius) at the poles to highs of around 70 degrees Fahrenheit (20 degrees Celsius) at the equator during summer. Surviving such temperature extremes would require insulated habitats and protective gear.", "Lack of Breathable Air: As mentioned earlier, Mars' atmosphere is predominantly composed of carbon dioxide and lacks sufficient oxygen for humans to breathe. To survive, a sustainable life support system is essential, which can extract oxygen from the Martian atmosphere or rely on Earth-imported supplies until long-term solutions, such as terraforming or large-scale oxygen production, are achieved."
             ], 
@@ -52,6 +53,7 @@
         {
             "lessonNo": "2",
             "lessonTitle": "Preparing for Travel",
+            "lessonDescription": "Enter this lesson to learn what items are or aren't necessary to bring for travel.",
             "facts": [
                 "What to bring: \n Water- Water is required for all life and a water recycling tool must be implemented, as there is little drinkable water on Mars. \n Hygiene items- Toothpaste, shampoo, floss, personal care and cleanliness is important no matter where you are! \n Medical supplies - first aid kits, medication, equipment, etc. required for healthcare and if anything goes wrong. \n Life support - requirement for air purification, as the atmosphere is not compatible for humans without assistance. \n Research tools - You might feel inclined to record the area around you.... \n Power generator-  In order to keep you alive, power must be generated to keep processes such as air purification and other requirements for life.",
                 "What not to bring: \n Pets - can introduce invasive species or disrupt the environment. \n Disposable items (plastic water bottle) - disposable items makes it harder to keep the Martian environment clean, and keeping everything reusable is a priority. \n Personal items - may affect the weight of the ship and can affect the trajectory or the landing. \n Combustible materials - in a lesser known environment, combustible materials become extremely dangerous. \n Anything not sterilized - Mars and Earth organisms should not be cross contaminated, as we do not want to drastically affect the genetic makeup of Mars."
@@ -94,6 +96,7 @@
         {
             "lessonNo": "3",
             "lessonTitle": "Self-Sustainability",
+            "lessonDescription": "Enter this lesson to learn how humans are able to survive for extended periods of time on Mars.",
             "facts": [
                 "Resource Management: Mars has limited resources, so efficient management and utilization are vital. Settlers will need to employ technologies and practices for conserving and recycling resources, including water, oxygen, and nutrients. Closed-loop life support systems will be necessary to minimize waste and ensure resource sustainability.",
                 "Food Production: Sustainable agriculture will be essential for food production on Mars. Methods such as hydroponics, aeroponics, or other controlled-environment agriculture techniques can be employed to grow crops in Martian habitats. Recycling organic waste as compost and utilizing efficient energy sources for lighting and heating will contribute to sustainable food production.",
@@ -145,6 +148,7 @@
         {
             "lessonNo": "4",
             "lessonTitle": "Keeping the Environment Clean & Eco-Friendly Leisure Activies",
+            "lessonDescription": "Enter this lesson to learn how you can stay entertained while keeping the Martian environment clean.",
             "facts": [
                 "Protecting Human Health: A clean environment is vital for ensuring the health and well-being of future astronauts and settlers on Mars. Mars is an inhospitable planet with harsh conditions, including a thin atmosphere, extreme cold, and radiation exposure. Any pollutants or contaminants in the environment could pose significant health risks to humans. By keeping the environment clean, we can minimize the potential for harmful substances that could adversely affect human health.",
                 "Preventing Contamination: It is essential to prevent contamination of the Martian environment to preserve its scientific value. Mars has the potential to harbor signs of past or present life, and studying its geology, climate, and potential microbial life can provide valuable insights into the origins and evolution of our solar system. If we introduce terrestrial microbes or contaminants from human activities, it could interfere with scientific research and compromise our ability to accurately understand Mars.",
@@ -194,6 +198,7 @@
         {
             "lessonNo": "Assessment",
             "lessonTitle": "Take the Assessment",
+            "lessonDescription": "Test your new knowledge with this final assessment.",
             "facts": ["Congratulatons on finishing your space course! This is your final assessment, which will determine whether or not you receieve your certificate. Click 'next' to begin. Good luck!"],
             "quiz": [
                 {

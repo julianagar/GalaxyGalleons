@@ -3,7 +3,7 @@
 </head>
 
 <h1>Lesson <%= lesson1.lessonNo %>: <%= lesson1.lessonTitle %></h1>
-<h4>Take this exam before you continue to the rest of the course in order to see what you already know about space!</h4>
+<h4><%= lesson1.lessonDescription %></h4>
 
 <hr>
 
@@ -18,108 +18,113 @@
     <div id="quizzes" class="nondisplay-question">
         
         <% lesson1.quiz.forEach(question => { %>
-            <strong class="question"><%= question.question %></strong>
-            <p class="correct hide" id="correct<%=question.question.trim()%>">Correct!</p>
-            <p class="incorrect hide" id="incorrect<%=question.question.trim()%>">Incorrect!</p>
+            <p clas=""><strong class="question"><%= question.question %></strong><span class="correct hide" id="correct<%=question.question.trim()%>">Correct!</span><span class="incorrect hide" id="incorrect<%=question.question.trim()%>">Incorrect!</span></p>
+        <br>
+        <% question.quizAnswers.forEach(answer => { %>
+            <button id="<%= question.question %>" class="answers" name="<%= question.quizCorrectAnswer %>" value="<%= answer %>" onclick="verifyAnswer(this)"><%= answer %></button>
             <br>
-            <% question.quizAnswers.forEach(answer => { %>
-                <button id="<%= question.question %>" class="answers" name="<%= question.quizCorrectAnswer %>" value="<%= answer %>" onclick="verifyAnswer(this)"><%= answer %></button>
-                <br>
-                <% }) %>
-                <br>
-                <% }) %>
-                
-            </div>
+            <% }) %>
+            <br>
+            <% }) %>
             
-            <div id="quiz-conclusion" class="nondisplay-finish">
-                <h1>Congrats, you finished this unit!</h1>
-                <h3 id="readout"></h3>
-                <h6>Click "next" to review through your answers. </h6>
-                <a class="btn btn-secondary" href="/app">Go back home</a>
-            </div>
+        </div>
+        
+        <div id="quiz-conclusion" class="nondisplay-finish">
+            <h1>Congrats, you finished this unit!</h1>
+            <h3 id="readout"></h3>
+            <h6>Click "next" to review through your answers. </h6>
+            <a id="return-btn" class="btn btn-secondary" href="/">Go back home</a>
+        </div>
+        
+        
+        <button id="next-btn" class="btn btn-primary" onclick="showFacts()">Next</button>
+        
+        <script>
+            let incorrectProblems = 0
+            let correctProblems = 0
+            const totalProblems = 4
+            let attemptedQuestions = 0
             
+            var facts = document.getElementsByClassName("nondisplay-fact");
+            const nextBtn = document.getElementById('next-btn')
+            const returnBtn = document.getElementById('return-btn')
+            const factsArray = facts
+            const factLength = facts.length
+            let iterator = 0
+            function showFacts() {
+                if (iterator < factLength) {
+                    facts[iterator].style.display = "block";
+                    iterator += 1;
+                } else if (iterator => factLength) {
+                    hideFacts()
+                }
+                
+            }
             
-            <button class="btn btn-primary" onclick="showFacts()">Next</button>
+            function hideFacts() {
+                const factsDiv = document.getElementById('lessons')
+                for (const child of factsDiv.children) {
+                    child.style.display = "none"
+                }
+                displayQuiz()
+            }
             
-            <script>
-                let incorrectProblems = 0
-                let correctProblems = 0
-                const totalProblems = 4
-                let attemptedQuestions = 0
+            function displayQuiz() {
                 
-                var facts = document.getElementsByClassName("nondisplay-fact");
-                const factsArray = facts
-                const factLength = facts.length
-                let iterator = 0
-                function showFacts() {
-                    if (iterator < factLength) {
-                        facts[iterator].style.display = "block";
-                        iterator += 1;
-                    } else if (iterator => factLength) {
-                        hideFacts()
-                    }
+                const quizDiv = document.getElementById('quizzes')
+                quizDiv.classList.remove('nondisplay-question')
+            }
+            
+            function verifyAnswer(event) {
+                const button = event.target
+                const question = button.id
+                const answer = button.value
+                const correctAnswer = button.name
+                console.log(question, answer, correctAnswer)
+                
+                if (answer === correctAnswer) {
+                    alert("Correct!")
+                    correctProblems += 1
+                    attemptedQuestions += 1
+                    document.getElementById(`correct${question.trim()}`).classList.remove('hide')
+                } else {
+                    alert("Incorrect!")
+                    incorrectProblems += 1
+                    document.getElementById(`incorrect${question.trim()}`).classList.remove('hide')
+                    attemptedQuestions += 1 
                     
                 }
                 
-                function hideFacts() {
-                    const factsDiv = document.getElementById('lessons')
-                    for (const child of factsDiv.children) {
-                        child.style.display = "none"
-                    }
-                    displayQuiz()
+                if (attemptedQuestions >= totalProblems) {
+                    finishQuiz()
                 }
+            }
+            
+            function finishQuiz() {
+                const quizDiv = document.getElementById('quizzes')
+                quizDiv.classList.add('nondisplay-question')
                 
-                function displayQuiz() {
-                    
-                    const quizDiv = document.getElementById('quizzes')
-                    quizDiv.classList.remove('nondisplay-question')
-                }
+                const conclusionDiv = document.getElementById('quiz-conclusion')
+                conclusionDiv.classList.remove('nondisplay-finish')
                 
-                function verifyAnswer(event) {
-                    const button = event.target
-                    const question = button.id
-                    const answer = button.value
-                    const correctAnswer = button.name
-                    console.log(question, answer, correctAnswer)
-                    
-                    if (answer === correctAnswer) {
-                        alert("Correct!")
-                        correctProblems += 1
-                        attemptedQuestions += 1
-                        document.getElementById(`correct${question.trim()}`).classList.remove('hide')
-                    } else {
-                        alert("Incorrect!")
-                        incorrectProblems += 1
-                        document.getElementById(`incorrect${question.trim()}`).classList.remove('hide')
-                        attemptedQuestions += 1 
-                        
-                    }
-                    
-                    if (attemptedQuestions >= totalProblems) {
-                        finishQuiz()
-                    }
-                }
-                
-                function finishQuiz() {
-                    const quizDiv = document.getElementById('quizzes')
-                    quizDiv.classList.add('nondisplay-question')
-                    
-                    const conclusionDiv = document.getElementById('quiz-conclusion')
-                    conclusionDiv.classList.remove('nondisplay-finish')
-                    
-                    const readout = document.getElementById('readout')
-                    const percentage = Math.round((correctProblems / totalProblems) * 100)
-                    readout.innerHTML = `You got ${correctProblems} out of ${totalProblems} correct, or ${percentage}%`
-                }
-                
-                Array.from(document.getElementsByClassName('answers')).forEach(v=>{
-                    v.addEventListener('click', verifyAnswer)
+                const readout = document.getElementById('readout')
+                const percentage = Math.round((correctProblems / totalProblems) * 100)
+                readout.innerHTML = `You got ${correctProblems} out of ${totalProblems} correct, or ${percentage}%`
+
+                nextBtn.addEventListener('click', () => {
+                    nextBtn.style.display = "none"
+                    returnBtn.style.display = "block"
                 })
-                
-                
-                
-                
-            </script>
+            }
             
-            <%- include('../partials/footer.ejs') %>
+            Array.from(document.getElementsByClassName('answers')).forEach(v=>{
+                v.addEventListener('click', verifyAnswer)
+            })
             
+            
+            
+            
+        </script>
+        
+        <%- include('../partials/footer.ejs') %>
+        

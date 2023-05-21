@@ -9,7 +9,7 @@
 <div class="main">
     <div class="dictionary">
         <% dictionary.words.forEach(word => { %>
-            <p id="<%= word.word %>" name="definition"><strong><%= word.word %></strong> <%= word.definition %></p>
+            <p id="<%= word.word.toLowerCase().trim()%>" name="definition"><strong><%= word.word %></strong> <%= word.definition %></p>
         <% }) %>    
     </div>
     
@@ -29,7 +29,7 @@
     console.log(definitions)
 
     function findWord() {
-        const search = document.querySelector("input[name='search']").value
+        const search = document.querySelector("input[name='search']").value.trim().toLowerCase()
         console.log(search)
         definitions.forEach(definition => {
             if (definition.id === search) {

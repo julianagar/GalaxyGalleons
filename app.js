@@ -12,11 +12,18 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 let users = [
-    {name: "Elon Musk", password: "Tesla", progress: [0, 0, 0,  0, 0]},
+    {name: "Simon Ngyuen", password: "ChatGPT", progress: [0, 0, 0,  0, 0]},
 ]
 
+let loggedIn = false
+let user 
+
 app.get("/", function(req, res) {
-    res.render("index");
+    if (loggedIn === true) {
+        res.render("app", {user: user})
+    } else {
+        res.render("index")
+    }
 })
 
 app.post("/", function(req, res) {
@@ -26,8 +33,9 @@ app.post("/", function(req, res) {
     
     users.forEach(function(login) {
         if (login.name === username && login.password === password) {
-            const theUser = login
-            res.render("app")
+            user = login
+            loggedIn = true
+            res.render("app", {user: user})
         } else {
             res.send("There was a problem logging in. Please try again.")
         }
