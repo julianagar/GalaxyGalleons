@@ -61,3 +61,35 @@ body {
 .nondisplay-finish {
     display: none;
 }
+
+.main {
+    overflow: hidden;
+}
+
+.dictionary {
+    display: inline-block;
+    width: 60%;
+    margin: 10px;
+    float:left;
+}
+
+.search {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.planet-info {
+    display: inline-block;
+    width: 60%;
+    margin: 10px;
+    float:left;
+}
+
+.planet-img {
+    display: inline-block;
+    width: 20%;
+    margin: 10px;
+    margin: auto auto;
+}

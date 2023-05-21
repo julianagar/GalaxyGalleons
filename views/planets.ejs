@@ -1,0 +1,29 @@
+<%- include('../partials/header.ejs') %>
+
+<h1>Planets</h1>
+<h3>Explore the planets of the galaxy.</h3>
+<hr>
+
+<div class="main">
+    <div class="planet-info">
+        <h2><%= planet.name %></h2>
+        <ul>
+            <li>Diameter: <%= planet.diameter %></li>
+            <li>Mass: <%= planet.mass %></li>
+            <li>Gravity: <%= planet.gravity %></li>
+            <li>Orbital Period: <%= planet.orbital_period %></li>
+            <li>Distance from the sun: <%= planet.distance_from_sun %></li>
+            <li>Atmosphere: <%= planet.atmosphere %></li>
+            <li>Moons: <%= planet.moons %></li>
+        </ul>
+        <p><%= planet.human_sustainability %></p>
+    </div>
+
+    <div class="planet-img">
+        <img src="<%= planet.img %> " alt="Mercury" width="400">
+    </div>
+    
+
+</div>
+
+<%- include('../partials/footer.ejs') %>

@@ -1,0 +1,45 @@
+<%- include('../partials/header.ejs') %>
+
+<h1>Dictionary</h1>
+<h3>A guide of all of the words that may come up throughout your trip.</h3>
+
+<hr>
+<div class="main">
+    <div class="dictionary">
+        <% dictionary.words.forEach(word => { %>
+            <p id="<%= word.word %>" name="definition"><strong><%= word.word %></strong> <%= word.definition %></p>
+        <% }) %>    
+    </div>
+    
+    <div class="search">
+        <!-- search bar with bootstrap-->
+        <h2>Search the dictionary: </h2>
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search">
+        <button class="btn btn-outline-success my-2 my-sm-0" onclick="findWord()">Search</button>
+        <a class="btn btn-danger my-2 my-sm-0" href="/Dictionary">Reset</a>
+
+    </div>
+    
+</div>
+
+<script>
+    const definitions = document.getElementsByName("definition")
+    console.log(definitions)
+
+    function findWord() {
+        const search = document.querySelector("input[name='search']").value
+        console.log(search)
+        definitions.forEach(definition => {
+            if (definition.id === search) {
+                definition.style.display = "block"
+            } else {
+                definition.style.display = "none"
+            }
+        })
+    }
+</script>
+
+
+
+
+<%- include('../partials/footer.ejs') %>
