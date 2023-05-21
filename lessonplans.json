@@ -9,22 +9,27 @@
             "quiz": [
                 {
                     "question": "What is the primary gas in Mars' atmosphere?",
-                    "quizAnswers": "a) Oxygen b) Nitrogen c) Carbon dioxide d) Argon",
-                    "quizCorrectAnswer": "c"
+                    "quizAnswers": [
+                        "a) Oxygen",
+                        "b) Nitrogen",
+                        "c) Carbon dioxide",
+                        "d) Argon"
+                    ],
+                    "quizCorrectAnswer": 2
                 }, 
                 {
                     "question": "Why is it necessary to have pressurized habitats or spacesuits on Mars? ",
-                    "quizAnswers": "a) To protect against dust storms b) To maintain suitable temperature levels c) To provide breathable oxygen d) To counteract the low atmospheric pressure",
-                    "quizCorrectAnswer": "d"
+                    "quizAnswers": ["a) To protect against dust storms", "b) To maintain suitable temperature levels", "c) To provide breathable oxygen", "d) To counteract the low atmospheric pressure"], 
+                    "quizCorrectAnswer": 3
                 },
                 {
                     "question": "What poses a significant challenge to human health and equipment on Mars?",
-                    "quizAnswers": "a) Extreme temperature variations b) Low levels of carbon dioxide c) Intense rainfall d) Fine Martian dust in the atmosphere",
+                    "quizAnswers": ["a) Extreme temperature variations", "b) Low levels of carbon dioxide", "c) Intense rainfall", "d) Fine Martian dust in the atmosphere"],
                     "quizCorrectAnswer": "d"
                 }, 
                 {
                     "question": "What is the primary reason why a sustainable life support system is crucial on Mars?",
-                    "quizAnswers": "a) To extract water from the Martian soil b) To generate electricity for habitation c) To produce breathable oxygen d) To prevent dust storms",
+                    "quizAnswers": ["a) To extract water from the Martian soil", "b) To generate electricity for habitation", "c) To produce breathable oxygen", "d) To prevent dust storms"],
                     "quizCorrectAnswer": "c"
                 }
             ]

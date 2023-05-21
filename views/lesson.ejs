@@ -13,12 +13,19 @@
     </div>
     
     <div id="quizzes" class="nondisplay-question">
-
-<% lesson1.quiz.forEach(question => { %>
-    <strong><%= question.question %></strong>
-    <p><%= question.quizAnswers %></p>
-<% }) %>
-    </div>
+        
+        <% lesson1.quiz.forEach(question => { %>
+            <strong><%= question.question %></strong>
+            <br>
+            <% question.quizAnswers.forEach(answer => { %>
+                <input type="radio" id="<%= answer %>" name="<%= question.question %>" value="<%= answer %>">
+                <label for="<%= answer %>"><%= answer %></label>
+                <br>
+            <% }) %>
+            <br>
+        <% }) %>
+                
+            </div>
             
             
             <button class="btn btn-primary" onclick="showFacts()">Next</button>
