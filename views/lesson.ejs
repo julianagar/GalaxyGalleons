@@ -18,7 +18,7 @@
     <div id="quizzes" class="nondisplay-question">
         
         <% lesson1.quiz.forEach(question => { %>
-            <strong><%= question.question %></strong>
+            <strong class="question"><%= question.question %></strong>
             <p class="correct hide" id="correct<%=question.question.trim()%>">Correct!</p>
             <p class="incorrect hide" id="incorrect<%=question.question.trim()%>">Incorrect!</p>
             <br>
