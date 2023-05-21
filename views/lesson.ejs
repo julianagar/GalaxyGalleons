@@ -22,17 +22,28 @@
             <% question.quizAnswers.forEach(answer => { %>
                 <button id="<%= question.question %>" class="answers" name="<%= question.quizCorrectAnswer %>" value="<%= answer %>" onclick="verifyAnswer(this)"><%= answer %></button>
                 <br>
-            <% }) %>
-            <br>
-        <% }) %>
+                <% }) %>
+                <br>
+                <% }) %>
                 
+            </div>
+            
+            <div id="quiz-conclusion" class="nondisplay-finish">
+                <h1>Congrats, you finished this unit!</h1>
+                <h3 id="readout"></h3>
+                <h6>Click "next" to review through your answers. </h6>
+                <a class="btn btn-secondary" href="/">Go back home</a>
             </div>
             
             
             <button class="btn btn-primary" onclick="showFacts()">Next</button>
             
             <script>
-                // const incorrectProblems 
+                let incorrectProblems = 0
+                let correctProblems = 0
+                const totalProblems = 4
+                let attemptedQuestions = 0
+                
                 var facts = document.getElementsByClassName("nondisplay-fact");
                 const factsArray = facts
                 const factLength = facts.length
@@ -67,23 +78,43 @@
                     const answer = button.value
                     const correctAnswer = button.name
                     console.log(question, answer, correctAnswer)
-
+                    
                     if (answer === correctAnswer) {
                         alert("Correct!")
+                        correctProblems += 1
+                        attemptedQuestions += 1
                         document.getElementById(`correct${question.trim()}`).classList.remove('hide')
                     } else {
                         alert("Incorrect!")
+                        incorrectProblems += 1
                         document.getElementById(`incorrect${question.trim()}`).classList.remove('hide')
-
+                        attemptedQuestions += 1 
+                        
+                    }
+                    
+                    if (attemptedQuestions >= totalProblems) {
+                        finishQuiz()
                     }
                 }
+                
+                function finishQuiz() {
+                    const quizDiv = document.getElementById('quizzes')
+                    quizDiv.classList.add('nondisplay-question')
+                    
+                    const conclusionDiv = document.getElementById('quiz-conclusion')
+                    conclusionDiv.classList.remove('nondisplay-finish')
 
+                    const readout = document.getElementById('readout')
+                    const percentage = Math.round((correctProblems / totalProblems) * 100)
+                    readout.innerHTML = `You got ${correctProblems} out of ${totalProblems} correct, or ${percentage}%`
+                }
+                
                 Array.from(document.getElementsByClassName('answers')).forEach(v=>{
                     v.addEventListener('click', verifyAnswer)
                 })
-
-
-
+                
+                
+                
                 
             </script>
             

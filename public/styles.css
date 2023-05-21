@@ -57,3 +57,7 @@ body {
 .hide {
     display: none;
 }
+
+.nondisplay-finish {
+    display: none;
+}
