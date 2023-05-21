@@ -1,6 +1,6 @@
-const lessonPlans = require('./lessonplans.json')
-const planets = require('./planets.json')
-const dictionary = require('./dictionary.json')
+const lessonPlans = require('./data/lessonplans.json')
+const planets = require('./data/planets.json')
+const dictionary = require('./data/dictionary.json')
 const express = require("express");
 const bodyParser = require("body-parser")
 const mongoose = require("mongoose")
@@ -81,6 +81,48 @@ const Mercury = planets.planets[0]
 
 app.get("/Mercury", function(req, res) {
     res.render("planets", {planet: Mercury});
+});
+
+const Venus = planets.planets[1]
+
+app.get("/Venus", function(req, res) {
+    res.render("planets", {planet: Venus});
+});
+
+const Earth = planets.planets[2]
+
+app.get("/Earth", function(req, res) {
+    res.render("planets", {planet: Earth});
+});
+
+const Mars = planets.planets[3]
+
+app.get("/Mars", function(req, res) {
+    res.render("planets", {planet: Mars});
+});
+
+const Jupiter = planets.planets[4]
+
+app.get("/Jupiter", function(req, res) {
+    res.render("planets", {planet: Jupiter});
+});
+
+const Saturn = planets.planets[5]
+
+app.get("/Saturn", function(req, res) {
+    res.render("planets", {planet: Saturn});
+});
+
+const Uranus = planets.planets[6]
+
+app.get("/Uranus", function(req, res) {
+    res.render("planets", {planet: Uranus});
+});
+
+const Neptune = planets.planets[7]
+
+app.get("/Neptune", function(req, res) {
+    res.render("planets", {planet: Neptune});
 });
 
 app.listen(3000, function() {
