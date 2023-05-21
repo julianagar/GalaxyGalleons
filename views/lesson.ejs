@@ -16,10 +16,11 @@
         
         <% lesson1.quiz.forEach(question => { %>
             <strong><%= question.question %></strong>
+            <p class="correct hide" id="correct<%=question.question.trim()%>">Correct!</p>
+            <p class="incorrect hide" id="incorrect<%=question.question.trim()%>">Incorrect!</p>
             <br>
             <% question.quizAnswers.forEach(answer => { %>
-                <input type="radio" id="<%= answer %>" name="<%= question.question %>" value="<%= answer %>">
-                <label for="<%= answer %>"><%= answer %></label>
+                <button id="<%= question.question %>" class="answers" name="<%= question.quizCorrectAnswer %>" value="<%= answer %>" onclick="verifyAnswer(this)"><%= answer %></button>
                 <br>
             <% }) %>
             <br>
@@ -31,6 +32,7 @@
             <button class="btn btn-primary" onclick="showFacts()">Next</button>
             
             <script>
+                // const incorrectProblems 
                 var facts = document.getElementsByClassName("nondisplay-fact");
                 const factsArray = facts
                 const factLength = facts.length
@@ -59,7 +61,29 @@
                     quizDiv.classList.remove('nondisplay-question')
                 }
                 
-                
+                function verifyAnswer(event) {
+                    const button = event.target
+                    const question = button.id
+                    const answer = button.value
+                    const correctAnswer = button.name
+                    console.log(question, answer, correctAnswer)
+
+                    if (answer === correctAnswer) {
+                        alert("Correct!")
+                        document.getElementById(`correct${question.trim()}`).classList.remove('hide')
+                    } else {
+                        alert("Incorrect!")
+                        document.getElementById(`incorrect${question.trim()}`).classList.remove('hide')
+
+                    }
+                }
+
+                Array.from(document.getElementsByClassName('answers')).forEach(v=>{
+                    v.addEventListener('click', verifyAnswer)
+                })
+
+
+
                 
             </script>
             
