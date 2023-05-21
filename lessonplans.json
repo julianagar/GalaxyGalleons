@@ -15,22 +15,93 @@
                         "c) Carbon dioxide",
                         "d) Argon"
                     ],
-                    "quizCorrectAnswer": 2
+                    "quizCorrectAnswer": "c) Carbon dioxide"
                 }, 
                 {
                     "question": "Why is it necessary to have pressurized habitats or spacesuits on Mars? ",
-                    "quizAnswers": ["a) To protect against dust storms", "b) To maintain suitable temperature levels", "c) To provide breathable oxygen", "d) To counteract the low atmospheric pressure"], 
-                    "quizCorrectAnswer": 3
+                    "quizAnswers": [
+                        "a) To protect against dust storms", 
+                        "b) To maintain suitable temperature levels", 
+                        "c) To provide breathable oxygen", 
+                        "d) To counteract the low atmospheric pressure"
+                    ], 
+                    "quizCorrectAnswer": "d) To counteract the low atmospheric pressure"
                 },
                 {
                     "question": "What poses a significant challenge to human health and equipment on Mars?",
-                    "quizAnswers": ["a) Extreme temperature variations", "b) Low levels of carbon dioxide", "c) Intense rainfall", "d) Fine Martian dust in the atmosphere"],
-                    "quizCorrectAnswer": "d"
+                    "quizAnswers": [
+                        "a) Extreme temperature variations", 
+                        "b) Low levels of carbon dioxide", 
+                        "c) Intense rainfall", 
+                        "d) Fine Martian dust in the atmosphere"
+                    ],
+                    "quizCorrectAnswer": "d) Fine Martian dust in the atmosphere"
                 }, 
                 {
                     "question": "What is the primary reason why a sustainable life support system is crucial on Mars?",
-                    "quizAnswers": ["a) To extract water from the Martian soil", "b) To generate electricity for habitation", "c) To produce breathable oxygen", "d) To prevent dust storms"],
-                    "quizCorrectAnswer": "c"
+                    "quizAnswers": [
+                        "a) To extract water from the Martian soil", 
+                        "b) To generate electricity for habitation", 
+                        "c) To produce breathable oxygen", 
+                        "d) To prevent dust storms"
+                    ],
+                    "quizCorrectAnswer": "c) To produce breathable oxygen"
+                }
+            ]
+        },
+        {
+            "lessonNo": "2",
+            "lessonTitle": "Preparing for Travel",
+            "what-to-bring": [
+                "Water- Water is required for all life and a water recycling tool must be implemented, as there is little drinkable water on Mars.",
+                "Hygiene items- Toothpaste, shampoo, floss, personal care and cleanliness is important no matter where you are!",
+                "Medical supplies - first aid kits, medication, equipment, etc. required for healthcare and if anything goes wrong.",
+                "Life support - requirement for air purification, as the atmosphere is not compatible for humans without assistance.",
+                "Research tools - You might feel inclined to record the area around you...",
+                "Power generator-  In order to keep you alive, power must be generated to keep processes such as air purification and other requirements for life."
+            ],
+            "what-not-to-bring": [
+                "Pets - can introduce invasive species or disrupt the environment.",
+                "Disposable items (plastic water bottle) - disposable items makes it harder to keep the Martian environment clean, and keeping everything reusable is a priority.",
+                "Personal items - may affect the weight of the ship and can affect the trajectory or the landing.",
+                "Combustible materials - in a lesser known environment, combustible materials become extremely dangerous.",
+                "Anything not sterilized - Mars and Earth organisms should not be cross contaminated, as we do not want to drastically affect the genetic makeup of Mars."
+            ]
+        },
+        {
+            "lessonNo": "3",
+            "lessonTitle": "Self-Sustainability",
+            "facts": [
+                "Resource Management: Mars has limited resources, so efficient management and utilization are vital. Settlers will need to employ technologies and practices for conserving and recycling resources, including water, oxygen, and nutrients. Closed-loop life support systems will be necessary to minimize waste and ensure resource sustainability.",
+                "Food Production: Sustainable agriculture will be essential for food production on Mars. Methods such as hydroponics, aeroponics, or other controlled-environment agriculture techniques can be employed to grow crops in Martian habitats. Recycling organic waste as compost and utilizing efficient energy sources for lighting and heating will contribute to sustainable food production.",
+                "Energy Generation: Mars receives only a fraction of the solar energy that Earth does, so settlers will need to rely on renewable energy sources. Solar power is a viable option due to the abundant sunlight on Mars. Deploying solar panels and implementing energy storage systems can provide a sustainable and reliable energy source for various activities, including life support systems and powering scientific instruments.",
+                "Habitat Design and Construction: Martian habitats must be designed for energy efficiency, durability, and thermal regulation. Utilizing local resources like Martian regolith or ice for construction can reduce the need for transporting materials from Earth. Designing habitats with insulation, radiation shielding, and efficient air circulation systems will contribute to sustainability and the overall well-being of settlers.",
+                "Waste Management: Developing efficient waste management systems is crucial for sustainability. Recycling and reusing waste materials, including water, organic matter, and other resources, will minimize the need for resupply missions from Earth. Advanced recycling technologies, such as water purification and waste-to-energy conversion, will be necessary to achieve sustainability.",
+                "Environmental Stewardship: Ensuring environmental cleanliness and minimizing human impact will be vital on Mars. Strict protocols will be required to prevent contamination of the Martian environment with terrestrial microbes or pollutants. Responsible exploration and colonization practices will help preserve the scientific value of Mars and maintain the integrity of the ecosystem.",
+                "Innovation and Adaptation: Sustainable practices on Mars will require continuous innovation, research, and development. Settlers will need to adapt to the unique challenges of the Martian environment and find creative solutions for sustainable living. Collaboration between scientists, engineers, and astronauts will be crucial for advancing sustainability efforts on Mars."
+            ],
+            "quiz": [
+                {
+                    "question": "What is a key aspect of achieving sustainability of Mars?",
+                    "quizAnswers": [
+                        "a) Exploration of Martian moons",
+                        "b) Efficient resource management",
+                        "c) Terraforming the Martian atmosphere"
+                    ],
+                    "quizCorrectAnswer": "b) Efficient resource management"
+                },
+                {
+                    "question": "Which energy source is likely to be most suitable for sustainable energy generation on Mars?",
+                    "quizAnswers": [
+                        "a) Fossil fuels",
+                        "b) Nuclear power",
+                        "c) Solar power"
+                    ],
+                    "quizCorrectAnswer": "c) Solar power"
+                },
+                {
+                    "question": "What is an important consideration for sustainable food production on Mars?",
+                    
                 }
             ]
         }
