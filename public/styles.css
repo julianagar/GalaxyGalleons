@@ -16,7 +16,7 @@ p, span {
     font-family: "Instrument Sans", sans-serif;
 }
 
-body { 
+body, html { 
     background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
     background-attachment: fixed; 
     
@@ -45,91 +45,3 @@ body {
 .lesson-preview {
     height: 60%;
 }
-
-.fact {
-    font-size: 20px;
-}
-
-.nondisplay-fact {
-    display: none;
-}
-
-.nondisplay-question {
-    display: none
-}
-
-.correct {
-    color: green;
-    margin: 10px;
-}
-
-.incorrect {
-    color: red;
-    margin: 10px;
-}
-
-.hide {
-    display: none;
-}
-
-.nondisplay-finish {
-    display: none;
-}
-
-.main {
-    overflow: hidden;
-}
-
-.dictionary {
-    display: inline-block;
-    width: 60%;
-    margin: 10px;
-    float:left;
-}
-
-.search {
-    display: inline-block;
-    width: 30%;
-    margin: 10px;
-    overflow: hidden;
-}
-
-.planet-info {
-    display: inline-block;
-    width: 60%;
-    margin: 10px;
-    float:left;
-}
-
-.planet-img {
-    display: inline-block;
-    width: 20%;
-    margin: 10px;
-    margin: auto auto;
-}
-
-.answers {
-    background: none!important;
-    border: none;
-    padding: 0!important;
-    /*optional*/
-    font-family: arial, sans-serif;
-    /*input has OS specific font-family*/
-    color: white;
-    text-decoration: underline;
-    cursor: pointer;
-    
-}
-
-.question {
-    font-size: 20px;
-}
-
-#return-btn {
-    display: none;
-}
-
-footer {
-    margin: 30px;
-}
-
